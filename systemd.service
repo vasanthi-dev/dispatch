@@ -1,0 +1,12 @@
+[Unit]
+Description = Dispatch Service
+[Service]
+User=roboshop
+Environment=AMQP_HOST=RABBITMQ-IP
+Environment=AMQP_USER=RABBITMQ-USER
+Environment=AMQP_PASS=RABBITMQ-PASS
+ExecStart=/home/roboshop/dispatch/dispatch
+SyslogIdentifier=cart
+
+[Install]
+WantedBy=multi-user.target
