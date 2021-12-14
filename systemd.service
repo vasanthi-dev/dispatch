@@ -3,8 +3,8 @@ Description = Dispatch Service
 [Service]
 User=roboshop
 Environment=AMQP_HOST=RABBITMQ-IP
-Environment=AMQP_USER=RABBITMQ-USER
-Environment=AMQP_PASS=RABBITMQ-PASS
+Environment=AMQP_USER=roboshop
+Environment=AMQP_PASS=roboshop123
 ExecStart=/home/roboshop/dispatch/dispatch
 SyslogIdentifier=cart
 
